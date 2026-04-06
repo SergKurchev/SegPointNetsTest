@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "nbv-model"
+version = "0.1.0"
+description = "Next Best View via Soft Actor-Critic (SAC) for RGB-D camera on a robot arm"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+dependencies = [
+    # ── RL framework ──────────────────────────────────────────
+    "stable-baselines3[extra]>=2.3.0",
+    "gymnasium>=0.29.0",
+    # ── Deep learning ─────────────────────────────────────────
+    "torch>=2.1.0",
+    "torchvision>=0.16.0",
+    # ── Config & utilities ────────────────────────────────────
+    "pyyaml>=6.0",
+    "numpy>=1.24.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+# Video recording for evaluation episodes
+video = [
+    "imageio>=2.31.0",
+    "imageio[ffmpeg]",
+]
+
+# Weights & Biases experiment tracking
+wandb = [
+    "wandb>=0.17.0",
+]
+
+# ODIN pointcloud backend (heavy — run setup_odin.py instead)
+odin = [
+    "open3d>=0.17.0",
+    "trimesh>=3.22.0",
+    "einops>=0.6.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.2.0",
+    "omegaconf>=2.3.0",
+    # detectron2 and pytorch3d must be installed separately:
+    # python setup_odin.py --install
+]
+
+# Development tools
+dev = [
+    "pytest>=7.4.0",
+    "black>=24.0.0",
+    "ruff>=0.4.0",
+]
+
+# Everything except ODIN (odin needs special install via setup_odin.py)
+all = [
+    "imageio>=2.31.0",
+    "imageio[ffmpeg]",
+    "wandb>=0.17.0",
+]
+
+[project.scripts]
+nbv-train = "nbv_model:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W"]
+ignore = ["E501"]

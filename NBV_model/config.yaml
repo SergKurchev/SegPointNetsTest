@@ -1,0 +1,106 @@
+# =============================================================================
+# NBV (Next Best View) SAC Agent — Configuration
+# =============================================================================
+
+# ── Perception ────────────────────────────────────────────────────────────────
+perception:
+  # "cnn"        — process RGB-D frames directly with CNN + temporal fusion
+  # "pointcloud" — unproject frames to 3D point cloud, then PointNet++/ODIN
+  mode: "pointcloud"
+
+  cnn:
+    # Backbone: "efficientnet_v2_s" | "resnet50" | "mobilenet_v3_large"
+    backbone: "efficientnet_v2_s"
+    pretrained: true              # use ImageNet weights for initialization
+    # Temporal fusion: "attention" | "gru" | "stack"
+    temporal_fusion: "attention"
+    temporal_attention_heads: 4
+    image_size: [480, 640]        # [H, W] — ScanNet standard
+    depth_scale: 1000.0           # divide raw depth by this → metres
+
+  pointcloud:
+    # Backend: "pointnet2" | "odin"
+    # "pointnet2" — built-in PointNet++ (no extra deps)
+    # "odin"      — requires setup_odin.py to be run first
+    backend: "pointnet2"
+    max_points: 40000             # points per merged cloud
+    voxel_size: 0.02              # metres, for voxel downsampling (0 = off)
+    # Camera intrinsics (ScanNet defaults; override if different camera)
+    fx: 577.591
+    fy: 578.730
+    cx: 318.905
+    cy: 242.684
+    # ODIN-specific (only used when backend == "odin")
+    odin:
+      repo_dir: "odin_repo/"      # path to cloned ODIN repository
+      checkpoint: ""              # path to downloaded ODIN checkpoint
+      frozen_backbone: true       # freeze ODIN backbone; only train NBV head
+      feature_dim: 256            # ODIN output feature dimension
+
+# ── State Space ───────────────────────────────────────────────────────────────
+state:
+  max_frames: 10            # maximum number of RGB-D frames in history
+  camera_pose_dim: 7        # x y z qw qx qy qz
+  num_joints: 3             # number of robot arm joints
+  joint_dim: 3              # 3D position (x, y, z) per joint
+
+# ── Action Space ──────────────────────────────────────────────────────────────
+action:
+  pose_dim: 7               # x y z qw qx qy qz
+  # Normalization bounds for position (metres)
+  pos_min: [-2.0, -2.0, 0.0]
+  pos_max: [ 2.0,  2.0, 2.5]
+
+# ── Reward ────────────────────────────────────────────────────────────────────
+reward:
+  # R = seg_confidence_weight * conf_seg
+  #   - collision_penalty        (if collision with scene objects)
+  #   - no_segment_penalty       (if zero segments found)
+  #   + completeness_conf_weight * conf_complete
+  seg_confidence_weight: 10.0     # reward per unit of segmentation confidence
+  collision_penalty: 20.0         # penalty for manipulator collision
+  no_segment_penalty: 100.0       # penalty when model finds 0 segments
+  completeness_conf_weight: 20.0  # reward when model is sure scene is covered
+
+# ── SAC Hyperparameters ───────────────────────────────────────────────────────
+sac:
+  gamma: 0.99               # discount factor
+  tau: 0.005                # soft update coefficient
+  alpha: 0.2                # entropy temperature (used if auto_alpha=false)
+  auto_alpha: true          # automatically tune entropy temperature
+  target_entropy: "auto"    # "auto" = -action_dim; or specify float
+  buffer_size: 100000       # replay buffer size
+  batch_size: 256
+  actor_lr: 3.0e-4
+  critic_lr: 3.0e-4
+  alpha_lr: 3.0e-4
+  hidden_dim: 512           # actor/critic MLP width
+  num_hidden_layers: 3      # actor/critic depth
+  update_every: 1           # env steps between gradient updates
+  gradient_steps: 1         # gradient steps per update
+  warmup_steps: 10000       # steps before learning starts
+
+# ── Training ──────────────────────────────────────────────────────────────────
+training:
+  total_timesteps: 1000000
+  eval_freq: 5000           # evaluate every N env steps
+  eval_episodes: 10
+  save_freq: 10000          # checkpoint every N env steps
+  log_freq: 100
+  checkpoint_dir: "checkpoints/"
+  log_dir: "logs/"
+  device: "cuda"            # "cuda" | "cpu" | "cuda:1" etc.
+  seed: 42
+
+# ── Callbacks ─────────────────────────────────────────────────────────────────
+callbacks:
+  use_tensorboard: true
+  use_wandb: false
+  wandb_project: "nbv-sac"
+  wandb_entity: ""
+  save_best: true           # save model with highest eval return
+  early_stopping: false
+  early_stopping_patience: 50   # in eval intervals
+  render_video: false
+  video_freq: 50000         # record video every N steps
+  video_length: 200         # max frames per video
