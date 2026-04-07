@@ -1,0 +1,832 @@
+{
+  "dataset_root": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\dataset",
+  "class_map": {
+    "0": "background",
+    "1": "ripe",
+    "2": "half-ripe",
+    "3": "unripe"
+  },
+  "splits": {
+    "train": [
+      "sample_0031",
+      "sample_0019",
+      "sample_0007",
+      "sample_0027",
+      "sample_0026",
+      "sample_0018",
+      "sample_0005",
+      "sample_0022",
+      "sample_0028",
+      "sample_0010",
+      "sample_0024",
+      "sample_0023",
+      "sample_0020",
+      "sample_0009",
+      "sample_0006",
+      "sample_0016",
+      "sample_0003",
+      "sample_0000",
+      "sample_0015"
+    ],
+    "val": [
+      "sample_0017",
+      "sample_0025",
+      "sample_0012",
+      "sample_0021",
+      "sample_0011",
+      "sample_0014"
+    ],
+    "test": [
+      "sample_0030",
+      "sample_0002",
+      "sample_0004",
+      "sample_0029",
+      "sample_0001",
+      "sample_0013",
+      "sample_0008"
+    ]
+  },
+  "models": {
+    "pointtransformerv3": {
+      "type": "point-cloud-semantic-segmentation",
+      "dataset_format": "Pointcept DefaultDataset",
+      "export_root": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\pointcept"
+    },
+    "oneformer3d": {
+      "type": "point-cloud-unified-segmentation",
+      "dataset_format": "ScanNet-style bins+pkl",
+      "export_root": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\oneformer3d"
+    },
+    "odin": {
+      "type": "multi-view RGB-D -> 3D",
+      "dataset_format": "ScanNet-context COCO-like scene",
+      "export_root": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\multiview",
+      "scene_json": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\multiview\\odin_strawberry_bush_val.coco.json"
+    },
+    "openyolo3d": {
+      "type": "multi-view RGB-D + reconstructed 3D scene",
+      "dataset_format": "Replica-like scene folder",
+      "export_root": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\multiview\\openyolo3d_scene"
+    }
+  },
+  "multiview_summary": {
+    "num_frames": 150,
+    "frame_stride": 2,
+    "rendered_frames": [
+      {
+        "frame_id": 0,
+        "image_id": 1,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 2,
+        "image_id": 2,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 4,
+        "image_id": 3,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 6,
+        "image_id": 4,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 8,
+        "image_id": 5,
+        "num_annotations": 1
+      },
+      {
+        "frame_id": 10,
+        "image_id": 6,
+        "num_annotations": 2
+      },
+      {
+        "frame_id": 12,
+        "image_id": 7,
+        "num_annotations": 3
+      },
+      {
+        "frame_id": 14,
+        "image_id": 8,
+        "num_annotations": 5
+      },
+      {
+        "frame_id": 16,
+        "image_id": 9,
+        "num_annotations": 6
+      },
+      {
+        "frame_id": 18,
+        "image_id": 10,
+        "num_annotations": 6
+      },
+      {
+        "frame_id": 20,
+        "image_id": 11,
+        "num_annotations": 7
+      },
+      {
+        "frame_id": 22,
+        "image_id": 12,
+        "num_annotations": 8
+      },
+      {
+        "frame_id": 24,
+        "image_id": 13,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 26,
+        "image_id": 14,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 28,
+        "image_id": 15,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 30,
+        "image_id": 16,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 32,
+        "image_id": 17,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 34,
+        "image_id": 18,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 36,
+        "image_id": 19,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 38,
+        "image_id": 20,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 40,
+        "image_id": 21,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 42,
+        "image_id": 22,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 44,
+        "image_id": 23,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 46,
+        "image_id": 24,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 48,
+        "image_id": 25,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 50,
+        "image_id": 26,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 52,
+        "image_id": 27,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 54,
+        "image_id": 28,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 56,
+        "image_id": 29,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 58,
+        "image_id": 30,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 60,
+        "image_id": 31,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 62,
+        "image_id": 32,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 64,
+        "image_id": 33,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 66,
+        "image_id": 34,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 68,
+        "image_id": 35,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 70,
+        "image_id": 36,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 72,
+        "image_id": 37,
+        "num_annotations": 17
+      },
+      {
+        "frame_id": 74,
+        "image_id": 38,
+        "num_annotations": 18
+      },
+      {
+        "frame_id": 76,
+        "image_id": 39,
+        "num_annotations": 19
+      },
+      {
+        "frame_id": 78,
+        "image_id": 40,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 80,
+        "image_id": 41,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 82,
+        "image_id": 42,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 84,
+        "image_id": 43,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 86,
+        "image_id": 44,
+        "num_annotations": 17
+      },
+      {
+        "frame_id": 88,
+        "image_id": 45,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 90,
+        "image_id": 46,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 92,
+        "image_id": 47,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 94,
+        "image_id": 48,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 96,
+        "image_id": 49,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 98,
+        "image_id": 50,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 100,
+        "image_id": 51,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 102,
+        "image_id": 52,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 104,
+        "image_id": 53,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 106,
+        "image_id": 54,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 108,
+        "image_id": 55,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 110,
+        "image_id": 56,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 112,
+        "image_id": 57,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 114,
+        "image_id": 58,
+        "num_annotations": 16
+      },
+      {
+        "frame_id": 116,
+        "image_id": 59,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 118,
+        "image_id": 60,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 120,
+        "image_id": 61,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 122,
+        "image_id": 62,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 124,
+        "image_id": 63,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 126,
+        "image_id": 64,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 128,
+        "image_id": 65,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 130,
+        "image_id": 66,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 132,
+        "image_id": 67,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 134,
+        "image_id": 68,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 136,
+        "image_id": 69,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 138,
+        "image_id": 70,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 140,
+        "image_id": 71,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 142,
+        "image_id": 72,
+        "num_annotations": 17
+      },
+      {
+        "frame_id": 144,
+        "image_id": 73,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 146,
+        "image_id": 74,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 148,
+        "image_id": 75,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 150,
+        "image_id": 76,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 152,
+        "image_id": 77,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 154,
+        "image_id": 78,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 156,
+        "image_id": 79,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 158,
+        "image_id": 80,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 160,
+        "image_id": 81,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 162,
+        "image_id": 82,
+        "num_annotations": 14
+      },
+      {
+        "frame_id": 164,
+        "image_id": 83,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 166,
+        "image_id": 84,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 168,
+        "image_id": 85,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 170,
+        "image_id": 86,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 172,
+        "image_id": 87,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 174,
+        "image_id": 88,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 176,
+        "image_id": 89,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 178,
+        "image_id": 90,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 180,
+        "image_id": 91,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 182,
+        "image_id": 92,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 184,
+        "image_id": 93,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 186,
+        "image_id": 94,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 188,
+        "image_id": 95,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 190,
+        "image_id": 96,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 192,
+        "image_id": 97,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 194,
+        "image_id": 98,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 196,
+        "image_id": 99,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 198,
+        "image_id": 100,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 200,
+        "image_id": 101,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 202,
+        "image_id": 102,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 204,
+        "image_id": 103,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 206,
+        "image_id": 104,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 208,
+        "image_id": 105,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 210,
+        "image_id": 106,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 212,
+        "image_id": 107,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 214,
+        "image_id": 108,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 216,
+        "image_id": 109,
+        "num_annotations": 15
+      },
+      {
+        "frame_id": 218,
+        "image_id": 110,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 220,
+        "image_id": 111,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 222,
+        "image_id": 112,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 224,
+        "image_id": 113,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 226,
+        "image_id": 114,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 228,
+        "image_id": 115,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 230,
+        "image_id": 116,
+        "num_annotations": 12
+      },
+      {
+        "frame_id": 232,
+        "image_id": 117,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 234,
+        "image_id": 118,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 236,
+        "image_id": 119,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 238,
+        "image_id": 120,
+        "num_annotations": 11
+      },
+      {
+        "frame_id": 240,
+        "image_id": 121,
+        "num_annotations": 13
+      },
+      {
+        "frame_id": 242,
+        "image_id": 122,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 244,
+        "image_id": 123,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 246,
+        "image_id": 124,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 248,
+        "image_id": 125,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 250,
+        "image_id": 126,
+        "num_annotations": 10
+      },
+      {
+        "frame_id": 252,
+        "image_id": 127,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 254,
+        "image_id": 128,
+        "num_annotations": 7
+      },
+      {
+        "frame_id": 256,
+        "image_id": 129,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 258,
+        "image_id": 130,
+        "num_annotations": 8
+      },
+      {
+        "frame_id": 260,
+        "image_id": 131,
+        "num_annotations": 7
+      },
+      {
+        "frame_id": 262,
+        "image_id": 132,
+        "num_annotations": 7
+      },
+      {
+        "frame_id": 264,
+        "image_id": 133,
+        "num_annotations": 8
+      },
+      {
+        "frame_id": 266,
+        "image_id": 134,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 268,
+        "image_id": 135,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 270,
+        "image_id": 136,
+        "num_annotations": 9
+      },
+      {
+        "frame_id": 272,
+        "image_id": 137,
+        "num_annotations": 6
+      },
+      {
+        "frame_id": 274,
+        "image_id": 138,
+        "num_annotations": 5
+      },
+      {
+        "frame_id": 276,
+        "image_id": 139,
+        "num_annotations": 3
+      },
+      {
+        "frame_id": 278,
+        "image_id": 140,
+        "num_annotations": 2
+      },
+      {
+        "frame_id": 280,
+        "image_id": 141,
+        "num_annotations": 1
+      },
+      {
+        "frame_id": 282,
+        "image_id": 142,
+        "num_annotations": 1
+      },
+      {
+        "frame_id": 284,
+        "image_id": 143,
+        "num_annotations": 2
+      },
+      {
+        "frame_id": 286,
+        "image_id": 144,
+        "num_annotations": 1
+      },
+      {
+        "frame_id": 288,
+        "image_id": 145,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 290,
+        "image_id": 146,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 292,
+        "image_id": 147,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 294,
+        "image_id": 148,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 296,
+        "image_id": 149,
+        "num_annotations": 0
+      },
+      {
+        "frame_id": 298,
+        "image_id": 150,
+        "num_annotations": 0
+      }
+    ],
+    "openyolo_scene_dir": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\multiview\\openyolo3d_scene\\strawberry_bush",
+    "odin_scene_root": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\multiview\\odin_frames",
+    "odin_coco_json": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\multiview\\odin_strawberry_bush_val.coco.json",
+    "full_bush_point_cloud": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark\\multiview\\openyolo3d_scene\\strawberry_bush\\strawberry_bush_mesh.ply"
+  }
+}

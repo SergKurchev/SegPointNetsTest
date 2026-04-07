@@ -1,0 +1,149 @@
+{
+  "output_dir": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package",
+  "copied_items": [
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\README.md",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\point_cloud_test\\README.md",
+      "kind": "file",
+      "size_bytes": 2670
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\MODEL_EVAL_GUIDE.md",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\point_cloud_test\\MODEL_EVAL_GUIDE.md",
+      "kind": "file",
+      "size_bytes": 1843
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\pyproject.toml",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\point_cloud_test\\pyproject.toml",
+      "kind": "file",
+      "size_bytes": 425
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\src",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\point_cloud_test\\src",
+      "kind": "directory",
+      "size_bytes": 223655
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\README.md",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\README.md",
+      "kind": "file",
+      "size_bytes": 1611
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\tools\\prepare_strawberry_benchmark.py",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\tools\\prepare_strawberry_benchmark.py",
+      "kind": "file",
+      "size_bytes": 22686
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\tools\\evaluate_strawberry_predictions.py",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\tools\\evaluate_strawberry_predictions.py",
+      "kind": "file",
+      "size_bytes": 7327
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\tools\\collect_pointcept_predictions.py",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\tools\\collect_pointcept_predictions.py",
+      "kind": "file",
+      "size_bytes": 1036
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\tools\\export_oneformer3d_predictions.py",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\tools\\export_oneformer3d_predictions.py",
+      "kind": "file",
+      "size_bytes": 3824
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\tools\\package_current_bush_delivery.py",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\tools\\package_current_bush_delivery.py",
+      "kind": "file",
+      "size_bytes": 11214
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\scripts",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\scripts",
+      "kind": "directory",
+      "size_bytes": 1514
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\configs\\strawberry",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\scripts\\SegPointNetsTest\\configs\\strawberry",
+      "kind": "directory",
+      "size_bytes": 12011
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\dataset",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\point_cloud_test\\artifacts\\dataset",
+      "kind": "directory",
+      "size_bytes": 16464227
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\proof",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\point_cloud_test\\artifacts\\proof",
+      "kind": "directory",
+      "size_bytes": 19598342
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\benchmark_current_bush",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\point_cloud_test\\artifacts\\benchmark_current_bush",
+      "kind": "directory",
+      "size_bytes": 4918504
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\benchmark\\metrics_overview.png",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\point_cloud_test\\artifacts\\benchmark\\metrics_overview.png",
+      "kind": "file",
+      "size_bytes": 86366
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\benchmark\\runtime_comparison.png",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\point_cloud_test\\artifacts\\benchmark\\runtime_comparison.png",
+      "kind": "file",
+      "size_bytes": 44961
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\benchmark\\sample_0001_qualitative.png",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\point_cloud_test\\artifacts\\benchmark\\sample_0001_qualitative.png",
+      "kind": "file",
+      "size_bytes": 221743
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\point_cloud_test\\artifacts\\reid\\strawberry_remap.json",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\point_cloud_test\\artifacts\\reid\\strawberry_remap.json",
+      "kind": "file",
+      "size_bytes": 112537
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\data_exports\\strawberry_benchmark",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\SegPointNetsTest\\data_exports\\strawberry_benchmark",
+      "kind": "directory",
+      "size_bytes": 162034017
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\artifacts\\predictions",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\SegPointNetsTest\\artifacts\\predictions",
+      "kind": "directory",
+      "size_bytes": 1104080
+    },
+    {
+      "source": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\artifacts\\reports",
+      "target": "D:\\MyProjects\\Robostrawberry\\SegPointNetsTest\\delivery\\current_bush_package\\results\\SegPointNetsTest\\artifacts\\reports",
+      "kind": "directory",
+      "size_bytes": 10931
+    }
+  ],
+  "benchmark_models": [
+    "odin",
+    "oneformer3d",
+    "open-yolo-3d",
+    "pointtransformerv3"
+  ],
+  "split_sizes": {
+    "train": 19,
+    "val": 6,
+    "test": 7
+  },
+  "multiview_frames": 150
+}
