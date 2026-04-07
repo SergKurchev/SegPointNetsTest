@@ -1,0 +1,149 @@
+{
+  "output_dir": ".",
+  "copied_items": [
+    {
+      "source": "point_cloud_test/README.md",
+      "target": "README.md",
+      "kind": "file",
+      "size_bytes": 2670
+    },
+    {
+      "source": "point_cloud_test/MODEL_EVAL_GUIDE.md",
+      "target": "MODEL_EVAL_GUIDE.md",
+      "kind": "file",
+      "size_bytes": 1843
+    },
+    {
+      "source": "point_cloud_test/pyproject.toml",
+      "target": "pyproject.toml",
+      "kind": "file",
+      "size_bytes": 425
+    },
+    {
+      "source": "point_cloud_test/src",
+      "target": "src",
+      "kind": "directory",
+      "size_bytes": 223655
+    },
+    {
+      "source": "SegPointNetsTest/README.md",
+      "target": "SegPointNetsTest/README.md",
+      "kind": "file",
+      "size_bytes": 1611
+    },
+    {
+      "source": "SegPointNetsTest/tools/prepare_strawberry_benchmark.py",
+      "target": "SegPointNetsTest/tools/prepare_strawberry_benchmark.py",
+      "kind": "file",
+      "size_bytes": 22686
+    },
+    {
+      "source": "SegPointNetsTest/tools/evaluate_strawberry_predictions.py",
+      "target": "SegPointNetsTest/tools/evaluate_strawberry_predictions.py",
+      "kind": "file",
+      "size_bytes": 7327
+    },
+    {
+      "source": "SegPointNetsTest/tools/collect_pointcept_predictions.py",
+      "target": "SegPointNetsTest/tools/collect_pointcept_predictions.py",
+      "kind": "file",
+      "size_bytes": 1036
+    },
+    {
+      "source": "SegPointNetsTest/tools/export_oneformer3d_predictions.py",
+      "target": "SegPointNetsTest/tools/export_oneformer3d_predictions.py",
+      "kind": "file",
+      "size_bytes": 3824
+    },
+    {
+      "source": "SegPointNetsTest/tools/package_current_bush_delivery.py",
+      "target": "SegPointNetsTest/tools/package_current_bush_delivery.py",
+      "kind": "file",
+      "size_bytes": 12031
+    },
+    {
+      "source": "SegPointNetsTest/scripts",
+      "target": "SegPointNetsTest/scripts",
+      "kind": "directory",
+      "size_bytes": 1514
+    },
+    {
+      "source": "SegPointNetsTest/configs/strawberry",
+      "target": "SegPointNetsTest/configs/strawberry",
+      "kind": "directory",
+      "size_bytes": 12011
+    },
+    {
+      "source": "point_cloud_test/artifacts/dataset",
+      "target": "artifacts/dataset",
+      "kind": "directory",
+      "size_bytes": 16464227
+    },
+    {
+      "source": "point_cloud_test/artifacts/proof",
+      "target": "artifacts/proof",
+      "kind": "directory",
+      "size_bytes": 19598342
+    },
+    {
+      "source": "point_cloud_test/artifacts/benchmark_current_bush",
+      "target": "artifacts/benchmark_current_bush",
+      "kind": "directory",
+      "size_bytes": 4918504
+    },
+    {
+      "source": "point_cloud_test/artifacts/benchmark/metrics_overview.png",
+      "target": "artifacts/benchmark/metrics_overview.png",
+      "kind": "file",
+      "size_bytes": 86366
+    },
+    {
+      "source": "point_cloud_test/artifacts/benchmark/runtime_comparison.png",
+      "target": "artifacts/benchmark/runtime_comparison.png",
+      "kind": "file",
+      "size_bytes": 44961
+    },
+    {
+      "source": "point_cloud_test/artifacts/benchmark/sample_0001_qualitative.png",
+      "target": "artifacts/benchmark/sample_0001_qualitative.png",
+      "kind": "file",
+      "size_bytes": 221743
+    },
+    {
+      "source": "point_cloud_test/artifacts/reid/strawberry_remap.json",
+      "target": "artifacts/reid/strawberry_remap.json",
+      "kind": "file",
+      "size_bytes": 112537
+    },
+    {
+      "source": "SegPointNetsTest/data_exports/strawberry_benchmark",
+      "target": "SegPointNetsTest/data_exports/strawberry_benchmark",
+      "kind": "directory",
+      "size_bytes": 162034017
+    },
+    {
+      "source": "SegPointNetsTest/artifacts/predictions",
+      "target": "SegPointNetsTest/artifacts/predictions",
+      "kind": "directory",
+      "size_bytes": 1104080
+    },
+    {
+      "source": "SegPointNetsTest/artifacts/reports",
+      "target": "SegPointNetsTest/artifacts/reports",
+      "kind": "directory",
+      "size_bytes": 10931
+    }
+  ],
+  "benchmark_models": [
+    "odin",
+    "oneformer3d",
+    "open-yolo-3d",
+    "pointtransformerv3"
+  ],
+  "split_sizes": {
+    "train": 19,
+    "val": 6,
+    "test": 7
+  },
+  "multiview_frames": 150
+}

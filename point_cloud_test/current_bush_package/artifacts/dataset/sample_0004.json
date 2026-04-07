@@ -1,0 +1,43 @@
+{
+  "sample_name": "sample_0004",
+  "target_segment_id": 19,
+  "frame_group": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "num_points": 16706,
+  "segments": [
+    {
+      "segment_id": 19,
+      "class_name": "ripe",
+      "num_points": 706
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": 7,
+      "num_segments": 1
+    },
+    {
+      "frame_id": 8,
+      "num_segments": 1
+    },
+    {
+      "frame_id": 9,
+      "num_segments": 1
+    },
+    {
+      "frame_id": 10,
+      "num_segments": 1
+    }
+  ],
+  "target_center_world": [
+    0.05240665748715401,
+    0.48254895210266113,
+    0.14225471019744873
+  ],
+  "target_radius_m": 0.050137684419751166,
+  "reid_threshold_m": 0.04914241563528776
+}

@@ -1,0 +1,70 @@
+{
+  "odin": {
+    "overall_accuracy": 0.048060825892857144,
+    "macro_iou": 0.012169704677123075,
+    "macro_f1": 0.02320959374789463,
+    "per_class_iou": {
+      "background": 0.0,
+      "ripe": 0.0486788187084923,
+      "half-ripe": 0.0,
+      "unripe": 0.0
+    },
+    "per_class_f1": {
+      "background": 0.0,
+      "ripe": 0.09283837499157852,
+      "half-ripe": 0.0,
+      "unripe": 0.0
+    }
+  },
+  "pointtransformerv3": {
+    "overall_accuracy": 0.07477678571428571,
+    "macro_iou": 0.08322345564588843,
+    "macro_f1": 0.14015800680979848,
+    "per_class_iou": {
+      "background": 0.0,
+      "ripe": 0.2366412213740458,
+      "half-ripe": 0.08877995642701525,
+      "unripe": 0.007472644782492661
+    },
+    "per_class_f1": {
+      "background": 0.0,
+      "ripe": 0.38271604938271603,
+      "half-ripe": 0.1630815407703852,
+      "unripe": 0.014834437086092715
+    }
+  },
+  "oneformer3d": {
+    "overall_accuracy": 0.18380301339285715,
+    "macro_iou": 0.08637966599741072,
+    "macro_f1": 0.1542666724771456,
+    "per_class_iou": {
+      "background": 0.13774149219949883,
+      "ripe": 0.1374693148850703,
+      "half-ripe": 0.0620782726045884,
+      "unripe": 0.008229584300485334
+    },
+    "per_class_f1": {
+      "background": 0.24213143872113677,
+      "ripe": 0.2417108102805572,
+      "half-ripe": 0.11689961880559085,
+      "unripe": 0.016324822101297615
+    }
+  },
+  "open-yolo-3d": {
+    "overall_accuracy": 0.415746157084174,
+    "macro_iou": 0.11577084042262413,
+    "macro_f1": 0.17051864474304784,
+    "per_class_iou": {
+      "background": 0.41223687322611163,
+      "ripe": 0.009813859196461482,
+      "half-ripe": 0.041032629267923386,
+      "unripe": 0.0
+    },
+    "per_class_f1": {
+      "background": 0.5838069817344429,
+      "ripe": 0.01943696673814847,
+      "half-ripe": 0.07883063049960003,
+      "unripe": 0.0
+    }
+  }
+}

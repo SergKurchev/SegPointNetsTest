@@ -1,0 +1,83 @@
+{
+  "sample_name": "sample_0006",
+  "target_segment_id": 46,
+  "frame_group": [
+    91,
+    92,
+    93,
+    94
+  ],
+  "num_points": 18136,
+  "segments": [
+    {
+      "segment_id": 2,
+      "class_name": "ripe",
+      "num_points": 303
+    },
+    {
+      "segment_id": 5,
+      "class_name": "half-ripe",
+      "num_points": 157
+    },
+    {
+      "segment_id": 6,
+      "class_name": "ripe",
+      "num_points": 210
+    },
+    {
+      "segment_id": 13,
+      "class_name": "half-ripe",
+      "num_points": 14
+    },
+    {
+      "segment_id": 14,
+      "class_name": "ripe",
+      "num_points": 35
+    },
+    {
+      "segment_id": 40,
+      "class_name": "half-ripe",
+      "num_points": 725
+    },
+    {
+      "segment_id": 44,
+      "class_name": "ripe",
+      "num_points": 530
+    },
+    {
+      "segment_id": 46,
+      "class_name": "ripe",
+      "num_points": 96
+    },
+    {
+      "segment_id": 47,
+      "class_name": "half-ripe",
+      "num_points": 66
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": 91,
+      "num_segments": 5
+    },
+    {
+      "frame_id": 92,
+      "num_segments": 9
+    },
+    {
+      "frame_id": 93,
+      "num_segments": 8
+    },
+    {
+      "frame_id": 94,
+      "num_segments": 7
+    }
+  ],
+  "target_center_world": [
+    -0.43464136123657227,
+    -0.07493368536233902,
+    0.1342821568250656
+  ],
+  "target_radius_m": 0.04,
+  "reid_threshold_m": 0.04914241563528776
+}

@@ -1,0 +1,20 @@
+{
+  "sample_name": "sample_0001",
+  "frame_id": 44,
+  "new_reid_threshold_m": 0.04914241563528776,
+  "old_unique_labels_in_frame": 4,
+  "new_unique_labels_in_frame": 13,
+  "sample_unique_segments": [
+    2,
+    5,
+    9,
+    19,
+    27,
+    35,
+    38,
+    40
+  ],
+  "target_segment_id": 40,
+  "old_global_co_visibility_violations": 1706,
+  "new_global_co_visibility_violations": 0
+}

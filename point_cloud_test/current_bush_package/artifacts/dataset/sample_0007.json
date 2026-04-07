@@ -1,0 +1,37 @@
+{
+  "sample_name": "sample_0007",
+  "target_segment_id": 47,
+  "frame_group": [
+    91,
+    92,
+    93,
+    94
+  ],
+  "num_points": 299,
+  "segments": [],
+  "frames": [
+    {
+      "frame_id": 91,
+      "num_segments": 0
+    },
+    {
+      "frame_id": 92,
+      "num_segments": 0
+    },
+    {
+      "frame_id": 93,
+      "num_segments": 0
+    },
+    {
+      "frame_id": 94,
+      "num_segments": 0
+    }
+  ],
+  "target_center_world": [
+    -0.3731079399585724,
+    -0.19250981509685516,
+    0.20160096883773804
+  ],
+  "target_radius_m": 0.04,
+  "reid_threshold_m": 0.04914241563528776
+}
